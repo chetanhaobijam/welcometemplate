@@ -243,20 +243,28 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-  grid-gap: 20px;
 }
 
 .works-grid div img {
   width: 100%;
 }
 
+@media screen and (min-width: 567px) {
+  .works-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
 @media screen and (min-width: 768px) {
+  .works-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .works-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-
-  .works-grid div img {
-    
-  }
 }
+
