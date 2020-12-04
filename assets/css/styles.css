@@ -268,3 +268,64 @@ html {
   }
 }
 
+/* Testimonials Section */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6e6e6;
+  margin: 0;
+}
+
+.testi-title {
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.testi-para {
+  background-color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: 15px;
+}
+
+.client {
+  color: var(--blue);
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .testi-title {
+    font-size: 2rem;
+  }
+  .testi-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin: 0px 100px;
+  }
+  .grid-area {
+    margin: 0px 30px;
+  }
+  .testi-para {
+    padding: 50px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .works-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
