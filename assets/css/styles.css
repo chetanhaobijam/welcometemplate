@@ -304,6 +304,16 @@ html {
   text-align: center;
 }
 
+@media screen and (min-width: 567px) {
+  .test-grid {
+    margin: 0px 20px;
+  }
+  
+  .grid-area {
+    margin: 0 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .testi-title {
     font-size: 2rem;
@@ -311,21 +321,30 @@ html {
   .testi-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    margin: 0px 100px;
-  }
-  .grid-area {
-    margin: 0px 30px;
+    margin: 0px 10px;
   }
   .testi-para {
-    padding: 50px;
+    padding: 30px;
     line-height: 30px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .works-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+  .testi-grid {
+    margin: 0 50px;
+  }
+  .grid-area {
+    margin: 0 30px;
+  }
+  .testi-para {
+    padding: 50px;
   }
 }
+
+@media screen and (min-width: 1200) {
+  .test-grid {
+    margin: 0px 100px;
+  }
+}
+
