@@ -390,6 +390,32 @@ input[type="submit"] {
   color: #ff0000;
 }
 
+@media screen and (min-width: 567px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+  form {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  form {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  form {
+    width: 40%;
+  }
+}
 /* Footer */
 footer {
   font-size: 1rem;
